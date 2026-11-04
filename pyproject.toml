@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evidence-control-toolkit"
+version = "0.1.0"
+description = "Lightweight evidence-control primitives for auditable database analysis"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Aiting Wang"}]
+maintainers = [{name = "Aiting Wang"}]
+keywords = ["evidence control", "scientific databases", "auditability", "reproducibility"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+evidence_control = ["default_config.json"]

@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.env
+.env.*
+*.log
+_review/
+整理检查报告_待最终论文.md

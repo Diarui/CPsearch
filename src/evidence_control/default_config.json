@@ -1,0 +1,29 @@
+{
+  "retrieval_budget": {
+    "max_actions": 6,
+    "max_atoms": 100
+  },
+  "identifier_pattern": "\\bCP\\d{5}\\b",
+  "attribute_terms": {
+    "function": ["function", "功能"],
+    "target": ["target", "靶点"],
+    "family": ["family", "家族"],
+    "biological_source": ["biological source", "organism source", "生物来源"],
+    "publication": ["publication", "pmid", "文献"]
+  },
+  "operation_requirements": {
+    "direct": ["direct_fact", "biological_source", "structure_support", "permeability"],
+    "assay": ["assay_value", "assay_target", "unit_status", "activity_qualification"],
+    "support": ["statement_support", "publication"],
+    "observation": ["observation", "derivation_disclosure"],
+    "similarity": ["similarity", "indirect_evidence_boundary"],
+    "status": ["knowledge_status"]
+  },
+  "claim_type_permissions": {
+    "direct_annotation": ["database_fact"],
+    "assay_observation": ["assay_context"],
+    "computed_observation": ["computed_observation"],
+    "similarity_routing": ["similarity_routing"],
+    "database_status": ["database_missingness"]
+  }
+}
